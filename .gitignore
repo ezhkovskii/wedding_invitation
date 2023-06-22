@@ -140,5 +140,4 @@ GitHub.sublime-settings
 debug.log
 db.sqlite3
 .idea
-
-static
+/static
