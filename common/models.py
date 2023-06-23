@@ -23,7 +23,7 @@ class Guest(models.Model):
 
     name = models.CharField('Имя и Фамилия', max_length=500)
     presence = models.CharField('Присутствие', max_length=5, choices=Presence.choices, default=Presence.LATER)
-    drink_preferences = MultiSelectField('Предпочтения по напиткам', max_length=20, choices=DrinkPreferences.choices, blank=True, null=True)
+    drink_preferences = MultiSelectField('Предпочтения по напиткам', max_length=200, choices=DrinkPreferences.choices, blank=True, null=True)
     food_wishes = models.TextField('Предпочтения по еде', blank=True, null=True)
 
     def __str__(self):
